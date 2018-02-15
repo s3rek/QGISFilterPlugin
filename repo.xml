@@ -1,0 +1,12 @@
+ <? xml version = "1.0" ?>
+ <? xml-stylesheet type = "text / xsl" href = "plugins.xsl" ?>
+ <plugins >
+   <pyqgis_plugin name = "Filter" version = "0.1.00" >
+     <description > This is the test plugin </ description >
+     <homepage > https://github.com/s3rek/plugins</ homepage >
+     <qgis_minimum_version > 2.0 </ qgis_minimum_version >
+     <file_name > Filter.zip </ file_name >
+     <author_name > DT </ author_name >
+     <download_url > https://github.com/s3rek/plugins2/raw/master/Filter.zip </ download_url >
+   </ pyqgis_plugin >
+ </ plugins > 
