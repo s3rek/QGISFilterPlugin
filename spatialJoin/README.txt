@@ -1,0 +1,8 @@
+The "spatial join" is an operation that allow to combine the attributes of two geometric layers when  they meet a given topological condition (for example when the feature of one in contained by a feature of the other).
+This is a basic function of many GIS systems. In QGIS there is a command in processing toolbox or in vector menu called "Join by location" that allow to create a new layer from the intersection of two existing layers.
+The new plugin called "SpatialJoin" is aimed to perform spatial joins without creating a new table, using the full set of available tolological condition. This is done exploiting the new expression fields feature, available from release 2.6.
+The plugin, using the "refFunction" expressions extension, needed as dependency, creates a expression spatial key field ("spjoin_rif") based on reference functions and joins the desidered fields with a value by id function in expression fields as well.
+The result is a complete dynamic table that resolvs spatial joins on the fly, evaluating the current layers features. All the plugin newly added fields  are signed with a "spjoin_" suffix
+Dynamic joins are very computational insensive, so it's recomended to test them with small datasets to avoid long waiting for results. 
+As alternative it's possible, unchecking the dynamic join option, to create a new static field to improve performance. 
+Furthermore, there is a last experimental option that allows to build up relation based on the two table join.
